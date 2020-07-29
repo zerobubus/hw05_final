@@ -3,14 +3,14 @@
 {% block content %}
 
 
-{% include "post_item.html" with post=post %}
-{% include "comments.html" %} 
+{% include "includes/post_item.html" with post=post %}
+{% include "includes/comments.html" %} 
 
 {% if not forloop.last %}<hr>{% endif %}
 
 
 {% if page.has_other_pages %}
-    {% include "paginator.html" with items=page paginator=paginator %}
+    {% include "includes/paginator.html" with items=page paginator=paginator %}
 {% endif %}
 ****
 {% endblock %}

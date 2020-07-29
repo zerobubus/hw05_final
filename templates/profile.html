@@ -59,7 +59,7 @@
                     <p class="card-text">
                         
                         
-                        {% include "post_item.html" with post=post %}
+                        {% include "includes/post_item.html" with post=post %}
                     
                     </p>
                     
@@ -69,7 +69,7 @@
 
 
             {% if page.has_other_pages %}
-            {% include "paginator.html" with items=page paginator=paginator %}
+            {% include "includes/paginator.html" with items=page paginator=paginator %}
             {% endif %}
             ****
             {% endblock %}

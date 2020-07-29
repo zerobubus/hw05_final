@@ -15,6 +15,7 @@ class GroupAdmin(admin.ModelAdmin):
     list_display = ("title", "description", "slug") 
     search_fields = ("title",) 
 
+
 class CommentAdmin(admin.ModelAdmin):
     
     list_display = ("post", "text", "created", "author") 
